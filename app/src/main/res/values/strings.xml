@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Proyecto Final</string>
+    <string name="password">Password</string>
+    <string name="e_mail">E-mail</string>
+    <string name="check">check</string>
+    <string name="redx">redx</string>
+    <string name="entrar">Entrar</string>
+    <string name="add_user">add user</string>
+    <string name="login">login</string>
+    <string name="crear_nuevo_usuario">Crear nuevo usuario</string>
+</resources>
