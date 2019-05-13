@@ -7,5 +7,10 @@
     <string name="entrar">Entrar</string>
     <string name="add_user">add user</string>
     <string name="login">login</string>
+    <string name="ingresar_usuario">Ingresar usuario</string>
     <string name="crear_nuevo_usuario">Crear nuevo usuario</string>
+    <string name="nombres">Nombres</string>
+    <string name="correo">Correo</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="carrera">Carrera</string>
 </resources>
