@@ -1,38 +1,46 @@
 package pnt.co.edu.unisabana;
 
 public class BibliotecarioClass {
-    private final String Nombre;
-    private final String Apellido;
-    private final String Dependencia;
-    private final String Email;
-    private final String Contrasena;
+    private final String nombre;
+    private final String apellido;
+    private final String dependencia;
+    private final String email;
+    private final String contrasena;
 
-    BibliotecarioClass(String Nombre, String Apellido, String Dependencia, String Email, String Contrasena){
-        this.Nombre = Nombre;
-        this.Apellido = Apellido;
-        this.Dependencia = Dependencia;
-        this.Email = Email;
-        this.Contrasena = Contrasena;
+    BibliotecarioClass(){
+        this.nombre = "";
+        this.apellido = "";
+        this.dependencia = "";
+        this.email = "";
+        this.contrasena = "";
+    }
+
+    BibliotecarioClass(String nombre, String apellido, String dependencia, String email, String contrasena){
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.dependencia = dependencia;
+        this.email = email;
+        this.contrasena = contrasena;
     }
 
     public String getNombre() {
-        return Nombre;
+        return nombre;
     }
 
     public String getApellido() {
-        return Apellido;
+        return apellido;
     }
 
     public String getDependencia() {
-        return Dependencia;
+        return dependencia;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public String getContrasena() {
-        return Contrasena;
+        return contrasena;
     }
 
 }
