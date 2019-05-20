@@ -1,18 +1,18 @@
 package pnt.co.edu.unisabana;
 
-public class estudianteClass {
+public class BibliotecarioClass {
     private final String Nombre;
     private final String Apellido;
-    private final String Carrera;
+    private final String Dependencia;
     private final String Email;
-    private final String Contraseña;
+    private final String Contrasena;
 
-    estudianteClass(String Nombre, String Apellido,String Carrera, String Email, String Contraseña){
+    BibliotecarioClass(String Nombre, String Apellido, String Dependencia, String Email, String Contrasena){
         this.Nombre = Nombre;
         this.Apellido = Apellido;
-        this.Carrera = Carrera;
+        this.Dependencia = Dependencia;
         this.Email = Email;
-        this.Contraseña = Contraseña;
+        this.Contrasena = Contrasena;
     }
 
     public String getNombre() {
@@ -23,16 +23,16 @@ public class estudianteClass {
         return Apellido;
     }
 
-    public String getCarrera() {
-        return Carrera;
+    public String getDependencia() {
+        return Dependencia;
     }
 
     public String getEmail() {
         return Email;
     }
 
-    public String getContraseña() {
-        return Contraseña;
+    public String getContrasena() {
+        return Contrasena;
     }
 
 }
