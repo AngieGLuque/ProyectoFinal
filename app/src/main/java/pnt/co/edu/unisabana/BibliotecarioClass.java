@@ -6,7 +6,6 @@ public class BibliotecarioClass {
     private final String Dependencia;
     private final String Email;
     private final String Contrasena;
-    private final String tujefa = "";
 
     BibliotecarioClass(String Nombre, String Apellido, String Dependencia, String Email, String Contrasena){
         this.Nombre = Nombre;
