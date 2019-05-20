@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import retrofit2.Retrofit;
+//import retrofit2.Retrofit;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(open);
             }
         });
-        Retrofit retrofit = new Retrofit.Builder()
-            .baseUrl("https://infinite-beyond-12720.herokuapp.com/")
-            .build();
-        final HerokuService service = retrofit.create(HerokuService.class);
+        //Retrofit retrofit = new Retrofit.Builder()
+        //    .baseUrl("https://infinite-beyond-12720.herokuapp.com/")
+        //    .build();
+        //final HerokuService service = retrofit.create(HerokuService.class);
     }
 }
