@@ -16,6 +16,7 @@ public class Singleton {
             Singleton.bibliotecario = BibliotecarioClass.getInstanceOf();
         }
         return  bibliotecario;
+
     }
 
 }
