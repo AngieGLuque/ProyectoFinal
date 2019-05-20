@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import retrofit2.Retrofit;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -14,19 +16,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ImageButton user_Create = findViewById(R.id.createUserButton);
         ImageButton user_Login = findViewById(R.id.loginUserButon);
-        user_Create.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent n = new Intent(MainActivity.this,RegisterStudentActivity.class);
-                startActivity(n);
-            }
-        });
-        user_Login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent n = new Intent(MainActivity.this,LoginActivity.class);
-                startActivity(n);
-            }
-        });
+        Retrofit retrofit = new Retrofit.Builder()
+            .baseUrl("https://infinite-beyond-12720.herokuapp.com/")
+            .build();
+        final HerokuService service = retrofit.create(HerokuService.class);
     }
 }
