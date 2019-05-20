@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent open = new Intent(MainActivity.this,EstudianteClass.class);
+                startActivity(open);
             }
         });
         Retrofit retrofit = new Retrofit.Builder()
