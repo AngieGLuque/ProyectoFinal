@@ -6,6 +6,15 @@ public class EstudianteClass {
     private final String carrera;
     private final String email;
     private final String contrasena;
+    private static EstudianteClass estudiante;
+
+    private EstudianteClass(){
+        this.nombre = "";
+        this.apellido = "";
+        this.carrera = "";
+        this.email = "";
+        this.contrasena = "";
+    }
 
     EstudianteClass(String nombre, String apellido, String carrera, String email, String contrasena){
         this.nombre = nombre;
@@ -31,8 +40,13 @@ public class EstudianteClass {
         return email;
     }
 
-    public String getContrasena() {
-        return contrasena;
+    public String getContrasena() { return contrasena; }
+
+    static EstudianteClass getInstanceOf(){
+        if(estudiante == null){
+            estudiante = new EstudianteClass();
+        }
+        return  estudiante;
     }
 
 }

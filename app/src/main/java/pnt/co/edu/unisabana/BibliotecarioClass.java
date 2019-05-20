@@ -6,8 +6,9 @@ public class BibliotecarioClass {
     private final String dependencia;
     private final String email;
     private final String contrasena;
+    private static BibliotecarioClass bibliotecario;
 
-    BibliotecarioClass(){
+    private BibliotecarioClass(){
         this.nombre = "";
         this.apellido = "";
         this.dependencia = "";
@@ -41,6 +42,13 @@ public class BibliotecarioClass {
 
     public String getContrasena() {
         return contrasena;
+    }
+
+    public static BibliotecarioClass getInstanceOf(){
+        if(bibliotecario == null){
+            bibliotecario = new BibliotecarioClass();
+        }
+        return  bibliotecario;
     }
 
 }
