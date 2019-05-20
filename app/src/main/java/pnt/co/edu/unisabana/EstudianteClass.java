@@ -7,12 +7,12 @@ public class EstudianteClass {
     private final String email;
     private final String contrasena;
 
-    EstudianteClass(String Nombre, String Apellido, String Carrera, String Email, String Contrasena){
-        this.nombre = Nombre;
-        this.apellido = Apellido;
-        this.carrera = Carrera;
-        this.email = Email;
-        this.contrasena = Contrasena;
+    EstudianteClass(String nombre, String apellido, String carrera, String email, String contrasena){
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.carrera = carrera;
+        this.email = email;
+        this.contrasena = contrasena;
     }
 
     public String getNombre() {
