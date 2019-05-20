@@ -14,7 +14,7 @@ public class EstudianteClass {
         this.email = email;
         this.contrasena = contrasena;
     }
-    //Hola
+    //Hola como estas
     public String getNombre() {
         return nombre;
     }
