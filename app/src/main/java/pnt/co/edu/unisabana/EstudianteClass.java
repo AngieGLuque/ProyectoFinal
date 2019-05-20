@@ -1,38 +1,38 @@
 package pnt.co.edu.unisabana;
 
 public class EstudianteClass {
-    private final String Nombre;
-    private final String Apellido;
-    private final String Carrera;
-    private final String Email;
-    private final String Contrasena;
+    private final String nombre;
+    private final String apellido;
+    private final String carrera;
+    private final String email;
+    private final String contrasena;
 
     EstudianteClass(String Nombre, String Apellido, String Carrera, String Email, String Contrasena){
-        this.Nombre = Nombre;
-        this.Apellido = Apellido;
-        this.Carrera = Carrera;
-        this.Email = Email;
-        this.Contrasena = Contrasena;
+        this.nombre = Nombre;
+        this.apellido = Apellido;
+        this.carrera = Carrera;
+        this.email = Email;
+        this.contrasena = Contrasena;
     }
 
     public String getNombre() {
-        return Nombre;
+        return nombre;
     }
 
     public String getApellido() {
-        return Apellido;
+        return apellido;
     }
 
     public String getCarrera() {
-        return Carrera;
+        return carrera;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public String getContrasena() {
-        return Contrasena;
+        return contrasena;
     }
 
 }
