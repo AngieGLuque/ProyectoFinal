@@ -1,12 +1,17 @@
 package pnt.co.edu.unisabana;
 
+import java.util.ArrayList;
+
 public class BibliotecarioClass {
     private final String nombre;
     private final String apellido;
     private final String dependencia;
     private final String email;
     private final String contrasena;
+    //Falta ID
+
     private static BibliotecarioClass bibliotecario;
+    public static ArrayList<BibliotecarioClass> bibliotecariosArray = new ArrayList<>();
 
     private BibliotecarioClass(){
         this.nombre = "";
@@ -44,7 +49,7 @@ public class BibliotecarioClass {
         return contrasena;
     }
 
-    public static BibliotecarioClass getInstanceOf(){
+    static BibliotecarioClass getInstanceOf(){
         if(bibliotecario == null){
             bibliotecario = new BibliotecarioClass();
         }
